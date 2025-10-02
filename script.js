@@ -1,28 +1,28 @@
 
 const questions = [
 
-    {question: "Question 1.", 
-    answers: ["Choice 1","Choice 2","Choice 3","Choice 4"],
+    {question: "Question 1. Which option in a String?", 
+    answers: ["'4.2'","true","Undefined","10"],
     correct: 0},
 
-    {question: "Question 2.", 
-    answers: ["Choice A","Choice B2","Choice D3","Choice C4"],
+    {question: "Question 2. Which attribute will change the font color?", 
+    answers: ["background","color","background-color","border"],
     correct: 1},
 
-    {question: "Question 3.", 
-    answers: ["Choice 1","Choice 2","Choice 3","Choice 4"],
+    {question: "Question 3. let colors = ['red', 'blue', 'green', 'yellow']; Which will color[1] access?", 
+    answers: ["'red'","'blue'","'green'","'yellow'"],
     correct: 1},
 
-    {question: "Question 4.", 
-    answers: ["Choice 1","Choice 2","Choice 3","Choice 4"],
+    {question: "Question 4. Which option is considered falsy?", 
+    answers: ["0","'false'","1","true"],
     correct: 0},
 
-    {question: "Question 5.", 
-    answers: ["Choice 1","Choice 2","Choice 3","Choice 4"],
+    {question: "Question 5. for(let i = 0; i < 4; i++)   How many times does this for loop run?", 
+    answers: ["1 time","2 times","3 times","4 times"],
     correct: 3},
 
-    {question: "Question 6.", 
-    answers: ["Choice 1","Choice 2","Choice 3","Choice 4"],
+    {question: "Question 6. Which is not an event listener?", 
+    answers: ["'click'","mousepress","mouseover","mouseout"],
     correct: 1},
 
 ];
@@ -70,7 +70,7 @@ function handleClick(index){
 }
 
 answerButtons.forEach((button , index) => {
-        button.addEventListener("click", (event) => {handleClick(index)});
+        button.addEventListener("click", () => {handleClick(index)});
 });
 
 nextButton.addEventListener("click", () => {
